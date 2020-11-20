@@ -24,7 +24,6 @@ namespace project5
             string filepath = HttpRuntime.AppDomainAppPath + @"\App_Data\Staff.xml";
             string user = txtNameStaff.Text;
             string password = txtPassStaff.Text;
-            string captcha = imgVerBox.Text.ToLower();
 
             if (String.IsNullOrEmpty(user) || String.IsNullOrEmpty(password))
             {
@@ -32,13 +31,6 @@ namespace project5
                 lblErrorLogin.Visible = true;
                 return;
 
-            }
-
-            if (captcha != Session["CaptchaVerify"].ToString())
-            {
-                lblErrorLogin.Text = "Please enter correcct verification captcha code!";
-                lblErrorLogin.Visible = true;
-                return;
             }
 
 

@@ -19,17 +19,6 @@
             <asp:TextBox ID="txtPassStaff" runat="server" TextMode="Password"></asp:TextBox>
             <br />
             <br />
-            Image Verification Code<br />
-            <br />
-            <asp:Image ID="Image1" runat="server" ImageUrl="~/Captcha.aspx" />
-            <br />
-            <br />
-            <br />
-            Please Enter Verification Code<br />
-            <asp:TextBox ID="imgVerBox" runat="server"></asp:TextBox>
-            <br />
-            <br />
-            <br />
             <asp:Button ID="btnStaffLogin" runat="server" OnClick="btnStaffLogin_Click" Text="LOGIN" />
             &nbsp;
             <asp:Button ID="btnHome" runat="server" OnClick="btnHome_Click" Text="HOME" />

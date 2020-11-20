@@ -20,10 +20,17 @@ namespace project5
         {
             //password match, not empty,xml search,xml add, redirect to login
             lblRegister.Visible = false;
-
+            string captcha = imgVerBox.Text.ToLower();
             if (txtNameReg.Text == null || txtPassReg.Text == null || txtRetypePass.Text == null || !(txtPassReg.Text).Equals(txtRetypePass.Text))
             {
                 lblRegister.Text = "Please enter correct values";
+                lblRegister.Visible = true;
+                return;
+            }
+
+            if (captcha != Session["CaptchaVerify"].ToString())
+            {
+                lblRegister.Text = "Please enter correcct verification captcha code!";
                 lblRegister.Visible = true;
                 return;
             }

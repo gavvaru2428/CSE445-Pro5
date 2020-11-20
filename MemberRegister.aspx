@@ -19,7 +19,18 @@
             <br />
             <br />
             Retype Password:&nbsp;
-            <asp:TextBox ID="txtRetypePass" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtRetypePass" runat="server" TextMode="Password"></asp:TextBox>
+            <br />
+            <br />
+            <br />
+            Image Verification Code<br />
+            <br />
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Captcha.aspx" />
+            <br />
+            <br />
+            Please Enter the Verification Code<br />
+            <asp:TextBox ID="imgVerBox" runat="server"></asp:TextBox>
+            <br />
             <br />
             <br />
             <asp:Button ID="btnRegister" runat="server" OnClick="btnRegister_Click" Text="Register" />
