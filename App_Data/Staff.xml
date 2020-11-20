@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Staff>
-	<member>
-		<name>TA</name>
-		<pwd>Cse445ta!</pwd>
-	</member>
-	<member>
-		<name>TEST</name>
-		<pwd>TEST</pwd>
-	</member>
+  <member>
+    <name>TA</name>
+    <pwd>Q3NlNDQ1dGEh</pwd>
+  </member>
+  <member>
+    <name>staff1</name>
+    <pwd>c3RhZmYx</pwd>
+  </member>
 </Staff>

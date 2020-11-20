@@ -15,6 +15,26 @@
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="HOME" />
             <br />
             <br />
+            As a Staff administrator use the below Username and Password box to add a new Staff member (into Staff.xml).<br />
+            <br />
+             Username:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="addStaffusername" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            Password :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="addStaffPass" runat="server" TextMode="Password"></asp:TextBox>
+            <br />
+            <br />
+              Retype Password:&nbsp;
+            <asp:TextBox ID="addStaffretypepass" runat="server" TextMode="Password"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Button ID="addStaffBtn" runat="server" OnClick="addStaffBtn_Click" Text="Add" Width="86px" />
+            <br />
+            <br />
+            <br />
+            <asp:Label ID="lbladdStaff" runat="server" Text="Label" Visible="False"></asp:Label>
+            <br />
+            <br />
             As a Staff member you are entitled to use the below two services.<br />
             <br />
             Service 1<br />

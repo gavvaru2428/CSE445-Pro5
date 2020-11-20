@@ -33,6 +33,51 @@ namespace project5.Staff
         protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
+        /// addStaffusername control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox addStaffusername;
+
+        /// <summary>
+        /// addStaffPass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox addStaffPass;
+
+        /// <summary>
+        /// addStaffretypepass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox addStaffretypepass;
+
+        /// <summary>
+        /// addStaffBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button addStaffBtn;
+
+        /// <summary>
+        /// lbladdStaff control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbladdStaff;
+
+        /// <summary>
         /// zipcode1TB control.
         /// </summary>
         /// <remarks>

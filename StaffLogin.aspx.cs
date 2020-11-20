@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PasswordProtection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -20,10 +21,12 @@ namespace project5
         {
 
             lblErrorLogin.Visible = false;
-
+            
+            DllClass dllClass = new DllClass();
+            
             string filepath = HttpRuntime.AppDomainAppPath + @"\App_Data\Staff.xml";
             string user = txtNameStaff.Text;
-            string password = txtPassStaff.Text;
+            string password = dllClass.enryptString(txtPassStaff.Text);
 
             if (String.IsNullOrEmpty(user) || String.IsNullOrEmpty(password))
             {
