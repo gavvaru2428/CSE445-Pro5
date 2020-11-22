@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -81,6 +82,12 @@ namespace project5.Members
         protected void btnHome_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Default.aspx");
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            FormsAuthentication.SignOut();
+            Server.Transfer("~/Default.aspx");
         }
     }
 }
