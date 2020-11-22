@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
@@ -123,6 +124,12 @@ namespace project5.Staff
             lbladdStaff.Text = String.Format("New Staff with name {0} is added to Staff.xml.", user);
             lbladdStaff.Visible = true;
 
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            FormsAuthentication.SignOut();
+            Server.Transfer("~/Default.aspx");
         }
     }
 }

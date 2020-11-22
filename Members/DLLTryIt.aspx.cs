@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using PasswordProtection;
@@ -65,6 +66,12 @@ namespace project5.Members
         protected void btnBack_Click(object sender, EventArgs e)
         {
             Response.Redirect("Member.aspx");
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            FormsAuthentication.SignOut();
+            Server.Transfer("~/Default.aspx");
         }
     }
 }

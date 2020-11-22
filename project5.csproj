@@ -90,9 +90,12 @@
     <Content Include="Global.asax" />
     <Content Include="MemberLogin.aspx" />
     <Content Include="MemberRegister.aspx" />
+    <Content Include="Members\AddToCartTryIt.aspx" />
     <Content Include="Members\DLLTryIt.aspx" />
+    <Content Include="Members\GetCartTotalTryIt.aspx" />
     <Content Include="Members\Member.aspx" />
     <Content Include="Members\ProductTryIt.aspx" />
+    <Content Include="Members\SolarServiceTryIt.aspx" />
     <Content Include="Members\WeatherTryIt.aspx" />
     <Content Include="StaffLogin.aspx" />
     <Content Include="Staff\Staff.aspx" />
@@ -135,12 +138,26 @@
     <Compile Include="MemberRegister.aspx.designer.cs">
       <DependentUpon>MemberRegister.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Members\AddToCartTryIt.aspx.cs">
+      <DependentUpon>AddToCartTryIt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Members\AddToCartTryIt.aspx.designer.cs">
+      <DependentUpon>AddToCartTryIt.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Members\DLLTryIt.aspx.cs">
       <DependentUpon>DLLTryIt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Members\DLLTryIt.aspx.designer.cs">
       <DependentUpon>DLLTryIt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Members\GetCartTotalTryIt.aspx.cs">
+      <DependentUpon>GetCartTotalTryIt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Members\GetCartTotalTryIt.aspx.designer.cs">
+      <DependentUpon>GetCartTotalTryIt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Members\Member.aspx.cs">
       <DependentUpon>Member.aspx</DependentUpon>
@@ -155,6 +172,13 @@
     </Compile>
     <Compile Include="Members\ProductTryIt.aspx.designer.cs">
       <DependentUpon>ProductTryIt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Members\SolarServiceTryIt.aspx.cs">
+      <DependentUpon>SolarServiceTryIt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Members\SolarServiceTryIt.aspx.designer.cs">
+      <DependentUpon>SolarServiceTryIt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Members\WeatherTryIt.aspx.cs">
       <DependentUpon>WeatherTryIt.aspx</DependentUpon>
