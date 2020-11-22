@@ -55,5 +55,11 @@ namespace project5.Members
             FormsAuthentication.SignOut();
             Server.Transfer("~/Default.aspx");
         }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PlaceOrderTryIt.aspx");
+        }
+
     }
 }

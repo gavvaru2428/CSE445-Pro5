@@ -94,6 +94,7 @@
     <Content Include="Members\DLLTryIt.aspx" />
     <Content Include="Members\GetCartTotalTryIt.aspx" />
     <Content Include="Members\Member.aspx" />
+    <Content Include="Members\PlaceOrderTryIt.aspx" />
     <Content Include="Members\ProductTryIt.aspx" />
     <Content Include="Members\SolarServiceTryIt.aspx" />
     <Content Include="Members\WeatherTryIt.aspx" />
@@ -165,6 +166,13 @@
     </Compile>
     <Compile Include="Members\Member.aspx.designer.cs">
       <DependentUpon>Member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Members\PlaceOrderTryIt.aspx.cs">
+      <DependentUpon>PlaceOrderTryIt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Members\PlaceOrderTryIt.aspx.designer.cs">
+      <DependentUpon>PlaceOrderTryIt.aspx</DependentUpon>
     </Compile>
     <Compile Include="Members\ProductTryIt.aspx.cs">
       <DependentUpon>ProductTryIt.aspx</DependentUpon>
