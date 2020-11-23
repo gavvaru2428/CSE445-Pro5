@@ -252,6 +252,16 @@ table, th, td {
 
   </td>
  </tr>
+     <tr>
+ <td   valign="top"><p>Anoop Reddy Vutukuri</p></td>
+ <td   valign="top"><p>User Control(Sign Out)</p></td>
+ <td   valign="top"><p><a href="http://webstrar74.fulton.asu.edu/Page0/Members/Member.aspx">http://webstrar74.fulton.asu.edu/Page0/Members/Member.aspx</a></p>
+
+  </td>
+ <td   valign="top"><p>Lets the user to sign out of the application</p>
+
+<td   valign="top"><p>Used C# Forms authentication from system.web.security library</p></td>
+ </tr>
  <tr>
  <td   valign="top"><p>Anoop Reddy Vutukuri</p></td>
  <td   valign="top"><p>SVC service</p></td>
@@ -297,6 +307,10 @@ table, th, td {
 <p>This Service will allow the buyer to enter the delivery method and buy the items in the cart. It returns the total charge including delivery fee.</p></td>
  <td   valign="top"><p>Used C# built in classes and custom written classes to implement this service. XML Files to store delivery details.</p></td>
  </tr>
+
+    </tr>
+
+
 
  
 
