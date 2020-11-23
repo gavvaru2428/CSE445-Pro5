@@ -21,13 +21,13 @@ namespace project5
         {
 
             lblErrorLogin.Visible = false;
-            
+            //Encryption/Decryption DLL Class
             DllClass dllClass = new DllClass();
             
             string filepath = HttpRuntime.AppDomainAppPath + @"\App_Data\Staff.xml";
             string user = txtNameStaff.Text;
             string password = dllClass.enryptString(txtPassStaff.Text);
-
+            //Username and Password Textbox should not be empty
             if (String.IsNullOrEmpty(user) || String.IsNullOrEmpty(password))
             {
                 lblErrorLogin.Text = "Please enter username and password!";
@@ -36,7 +36,7 @@ namespace project5
 
             }
 
-
+            //Search for username and password inside the Staff.xml
             XmlDocument myDoc = new XmlDocument();
             myDoc.Load(filepath);    // open file
             XmlElement rootElement = myDoc.DocumentElement;
@@ -70,6 +70,7 @@ namespace project5
             lblErrorLogin.Visible = true;
             return;
         }
+        //Create a Cookie ticket with the username, set a role identifier and expiration time.
         private void SignIn(string username, bool createPersistentCookie)
         {
             var now = DateTime.UtcNow.ToLocalTime();

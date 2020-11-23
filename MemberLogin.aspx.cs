@@ -38,7 +38,7 @@ namespace project5
             string user = txtMemName.Text;
 
             string password = txtMemPass.Text;
-
+            //Username and Password should not be empty
             if(String.IsNullOrEmpty(user) || String.IsNullOrEmpty(password))
             {
                 lblErrorLogin.Text = "Please enter username and password!";
@@ -46,7 +46,7 @@ namespace project5
                 return;
 
             }
-
+            //Encryption/Decryption DLL Class
             DllClass dllClass = new DllClass();
 
             string decryptPass = "";
@@ -57,7 +57,7 @@ namespace project5
             {
                 if (node["name"].InnerText == user)
                 {
-                    decryptPass = dllClass.decryptString(node["pwd"].InnerText);
+                    decryptPass = dllClass.decryptString(node["pwd"].InnerText); //Decrypt the password string stored in the xml
 
                     if (decryptPass.Equals(password))
                     {
@@ -92,6 +92,7 @@ namespace project5
             return;
 
         }
+        //Create a Cookie ticket with the username, set a role identifier and expiration time.
         private void SignIn(string username, bool createPersistentCookie)
         {
             var now = DateTime.UtcNow.ToLocalTime();

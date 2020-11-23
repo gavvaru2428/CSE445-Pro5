@@ -30,9 +30,9 @@ namespace project5
         {
 
         }
-
+        //Creating a Principal Object and assign it to the Current thread for every request
         protected void Application_AuthenticateRequest(object sender, EventArgs e)
-        {
+        {   
             HttpCookie decryptedCookie =
            Context.Request.Cookies[FormsAuthentication.FormsCookieName];
             if (decryptedCookie != null)

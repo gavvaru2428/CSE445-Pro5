@@ -15,7 +15,10 @@ namespace project5
         {
 
         }
-
+        // Member registration method, it checks if a member with same name is present if so returns an error
+        // password and retype password should match if not returns an error.
+        // User is asked to enter a number/code present in the Captcha Image.
+        //If all the above validation is passed then a new staff is entered into Members.xml
         protected void btnRegister_Click(object sender, EventArgs e)
         {
             //password match, not empty,xml search,xml add, redirect to login
