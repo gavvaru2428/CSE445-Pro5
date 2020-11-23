@@ -62,11 +62,10 @@ namespace project5
                 PutStringToFile("Errors.xml", doc.OuterXml);
             }
             else
-            {
+            {   //Write the error to file
                 XmlDocument doc = new XmlDocument();
                 doc.LoadXml(str);
                 string jsonText = JsonConvert.SerializeXmlNode(doc, Newtonsoft.Json.Formatting.None, true);
-                //Create a new cart for user or append the order to previously existing cart 
                 JObject errors = JObject.Parse(jsonText);
                 errors.AddFirst(new JProperty(time, JsonConvert.SerializeObject(ex.Message)));
                 doc = JsonConvert.DeserializeXmlNode(errors.ToString(), "root");
