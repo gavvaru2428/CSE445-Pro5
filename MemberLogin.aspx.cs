@@ -63,18 +63,19 @@ namespace project5
                     {
                         SignIn(user, false);
 
-                        /*if (Request.QueryString["ReturnUrl"] != null)
+
+                        if (!String.IsNullOrEmpty(Request.QueryString["ReturnUrl"]))
                         {
-                            FormsAuthentication.RedirectFromLoginPage(txtMemName.Text, false);
+
+                            // FormsAuthentication.RedirectFromLoginPage(txtMemName.Text, false);
+
+                            Response.Redirect(Request.QueryString["ReturnUrl"]);
+
                         }
                         else
                         {
-                            //FormsAuthentication.SetAuthCookie(txtMemName.Text, false);
-                            
                             Response.Redirect("Members/Member.aspx");
-                        } */
-
-                        Response.Redirect("Members/Member.aspx");
+                        }
 
                     }
                     else

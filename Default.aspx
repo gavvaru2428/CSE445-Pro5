@@ -5,6 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+
+a:link
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -23,6 +31,14 @@
             <asp:Button ID="btnMember" runat="server" Text="MEMBER PAGE" OnClick="btnMember_Click" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="btnStaffPage" runat="server" OnClick="btnStaffPage_Click" Text="STAFF PAGE" />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            Link to Application and Components Summary Table:
+            <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="#0066FF" NavigateUrl=" http://webstrar74.fulton.asu.edu/Page0/SummaryTable.aspx"> http://webstrar74.fulton.asu.edu/Page0/SummaryTable.aspx</asp:HyperLink>
         </div>
     </form>
 </body>

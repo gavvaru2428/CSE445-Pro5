@@ -100,6 +100,7 @@
     <Content Include="Members\WeatherTryIt.aspx" />
     <Content Include="StaffLogin.aspx" />
     <Content Include="Staff\Staff.aspx" />
+    <Content Include="SummaryTable.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -209,6 +210,13 @@
     </Compile>
     <Compile Include="Staff\Staff.aspx.designer.cs">
       <DependentUpon>Staff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SummaryTable.aspx.cs">
+      <DependentUpon>SummaryTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SummaryTable.aspx.designer.cs">
+      <DependentUpon>SummaryTable.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
